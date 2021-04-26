@@ -1,0 +1,7 @@
+
+if (Notification.permission === 'granted') {
+    var title = 'Push Notification'
+    var body = 'Triggered by Link on the <%= Rails.env %> enviroment'
+    var options = { body: body }
+    new Notification(title, options)
+}
